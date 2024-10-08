@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./fblogo.jpg">
+    <link rel="stylesheet" href="./bootsrap.min.css">
+    <link rel="stylesheet" href="./bootstarp.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col align-self-center" id="col1">
+                <div class="card" id="card1">
+                    <h2 class="text-primary">facebook</h2>
+                    <h4>Facebook helps you connect and share with the people in your life.</h4>
+                </div>
+            </div>
+            <div class="col align-self-center" id="col2">
+                <div class="card" id="card2">
+                    <div class="form">
+                        <input type="email" id="email"  placeholder=" Enter Email address ">
+                        <input id="pass" type="password" placeholder="Enter Password">
+                        <input class="btn btn-primary" id="loginbtn" type="button" value="Log in" onclick="login()">
+                        <a id="fpass" href="#" onclick="create()">forgotten pasword</a>
+                        <hr>
+                        <input class="btn btn-success" id="abtn" type="button" value="Create new account" onclick="create()">
+                        <p><span>create a page</span> for a celebrity,brand or business</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let email =  document.getElementById('email');
+        let pass = document.getElementById('pass');
+        const login = ()=>{
+            if (email.value === '' || pass.value === '') {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Please enter required fields",
+                    });
+            } else{
+                Swal.fire({
+                title: "Good job!",
+                title: "Facebook login page desinged only function not available",
+                icon: "success"
+                });
+                email.value = '';
+                pass.value = '';
+            }
+        }
+        const create = ()=>{
+            Swal.fire({
+                title: "Good job!",
+                title: "Facebook login page desinged only function not available",
+                icon: "success"
+                });
+        }
+    </script>
+</body>
+
+</html>

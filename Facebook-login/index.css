@@ -1,0 +1,87 @@
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#card1 {
+    border: none;
+    position: relative;
+    top:100px;
+}
+#card1 h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+#card1 h4 {
+    width: 450px;
+    height: 50px;
+}
+#card2 {
+    width: 400px;
+    height: 360px;
+    position: relative;
+    top:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px gray;
+}
+#email {
+    width: 360px;
+    padding: 10px;
+    position: relative;
+    top: 4px;
+    left: 18px;
+}
+#pass {
+    width: 360px;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    left: 18px;
+}
+#loginbtn {
+    width: 360px;
+    padding: 10px;
+    position: relative;
+    top: 40px;
+    left: 18px;
+    font-weight: bold;
+    font-size:25px;
+}
+#fpass {
+    position: relative;
+    top: 60px;
+    left: 140px;
+    text-decoration: none;
+}
+#fpass:hover {
+    text-decoration: underline;
+}
+hr {
+    position: relative;
+    top: 60px;
+    width: 380px;
+    left: 10px;
+}
+#abtn {
+    padding: 14px;
+    border: none;
+    width: 200px;
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+#card2 p {
+    position: relative;
+    top: 100px;
+    font-size: 18px;
+    left: 15px;
+}
+span {
+    font-weight: bold;
+}
+
